@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdlib.h>
 
 /**
 * binary_tree_insert_left - adds a node on the left child
