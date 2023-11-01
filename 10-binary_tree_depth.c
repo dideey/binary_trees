@@ -6,10 +6,11 @@
 */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-size_t ld, rd;
+size_t depth;
+
 if (tree == NULL)
-return (0);
-ld = binary_tree_depth(tree->left);
-rd = binary_tree_depth(tree->right);
-return (1 + (ld > rd ? ld : rd));
+return (-1);
+
+depth = binary_tree_depth(tree->parent);
+return (depth + 1);
 }
